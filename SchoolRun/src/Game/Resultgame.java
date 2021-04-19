@@ -30,32 +30,33 @@ public class Resultgame {
 		this.resultMoney = m;
 		u1.isItem = 0;
 		
-		System.out.println("°Ô½ºÆ® ³²Àº µ· : " + u1.guest_money);
+		System.out.println("ê²ŒìŠ¤íŠ¸ ë‚¨ì€ ëˆ : " + u1.guest_money);
 		
-		//Á¡¼ö
+		//ì ìˆ˜
 		JLabel score = new JLabel(Integer.toString(resultScore));
-		score.setFont(new Font("1ÈÆ»õ¸¶À»¿îµ¿ R", Font.BOLD | Font.ITALIC, 99));
-		score.setForeground(Color.WHITE);
-		score.setBounds(281, 141, 420, 100);
+		score.setFont(new Font("ë©”ì´í”ŒìŠ¤í† ë¦¬", Font.BOLD | Font.ITALIC, 99));
+		score.setForeground(Color.BLACK);
+		score.setBounds(278, 164, 420, 100);
 		panel.add(score);
 		
-		//¹è°æ
+		//ë°°ê²½
 		backIc = new ImageIcon("..//image//score_dialog.jpg");
 		panel.setLayout(null);
 		
-		//°ÔÀÓ¸Ó´Ï
+		//ê²Œì„ë¨¸ë‹ˆ
 		JLabel money = new JLabel(Integer.toString(resultMoney));
-		money.setFont(new Font("1ÈÆ»õ¸¶À»¿îµ¿ R", Font.PLAIN, 21));
-		money.setForeground(Color.WHITE);
-		money.setBounds(433, 232, 157, 74);
+		money.setFont(new Font("ë©”ì´í”ŒìŠ¤í† ë¦¬", Font.PLAIN, 21));
+		money.setForeground(Color.BLACK);
+		money.setBounds(338, 267, 157, 74);
 		panel.add(money);
 		
-		//¸ŞÀÎÈ­¸éÀ¸·Î
+		//ë©”ì¸í™”ë©´ìœ¼ë¡œ
 		JButton gotorobiBtn = new JButton("");
-		gotorobiBtn.setIcon(new ImageIcon("..//Image//btn_image//gotorobi.jpg"));
+		gotorobiBtn.setIcon(new ImageIcon("..\\image\\btn_image\\okay2_bt.png"));
 		gotorobiBtn.setBounds(460, 366, 267, 83);
 		gotorobiBtn.setBorderPainted(false);
 		gotorobiBtn.setFocusPainted(false);
+		gotorobiBtn.setContentAreaFilled(false);
 		panel.add(gotorobiBtn);
 		gotorobiBtn.addActionListener(new ActionListener() {
 			@Override
@@ -67,12 +68,13 @@ public class Resultgame {
 			}
 		});
 		
-		//´Ù½ÃÇÏ±â
+		//ë‹¤ì‹œí•˜ê¸°
 		JButton restartBtn = new JButton("");
-		restartBtn.setIcon(new ImageIcon("..//Image//btn_image//tryagain_btn.jpg"));
+		restartBtn.setIcon(new ImageIcon("..\\image\\btn_image\\replay_bt.png"));
 		restartBtn.setBounds(94, 366, 267, 83);
 		restartBtn.setBorderPainted(false);
 		restartBtn.setFocusPainted(false);
+		restartBtn.setContentAreaFilled(false);
 		panel.add(restartBtn);
 		restartBtn.addActionListener(new ActionListener() {
 			@Override
@@ -89,16 +91,16 @@ public class Resultgame {
 			}
 		});
 		
-		//¹è°æ
+		//ë°°ê²½
 		JLabel backimg = new JLabel("");
-		backimg.setFont(new Font("1ÈÆ»õ¸¶À»¿îµ¿ R", Font.BOLD, 18));
-		backimg.setIcon(new ImageIcon("..//Image//back_image//score_dialog.jpg"));
-		backimg.setBounds(0, 0, 801, 498);
+		backimg.setFont(new Font("1í›ˆìƒˆë§ˆì„ìš´ë™ R", Font.BOLD, 18));
+		backimg.setIcon(new ImageIcon("..\\image\\back_image\\score_bg.png"));
+		backimg.setBounds(0, 0, 814, 511);
 		panel.add(backimg);
 		
-		//´ÙÀÌ¾ó·Î±×
+		//ë‹¤ì´ì–¼ë¡œê·¸
 		panel.setBounds(0, 0, 815, 535);
-		frame.add(panel);
+		frame.getContentPane().add(panel);
 		
 		frame.setBounds(0, 0, 820, 540);
 		frame.setVisible(true);
