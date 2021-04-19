@@ -32,7 +32,7 @@ public class  Main_login extends JFrame implements ActionListener{
 	private JButton btn;
 
 	
-	User u1 = new User(); // ·Î±×ÀÎ Å¬·¡½º
+	User u1 = new User(); // ë¡œê·¸ì¸ í´ë˜ìŠ¤
 	private JLabel lblNewLabel;
 	private JLabel lblNewLabel_1;
 
@@ -44,15 +44,15 @@ public class  Main_login extends JFrame implements ActionListener{
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
-		id = new JTextField(); // ¾ÆÀÌµğ ÅØ½ºÆ®ÇÊµå
-		id.setFont(new Font("¸ŞÀÌÇÃ½ºÅä¸®", Font.PLAIN, 33));
-		id.setBounds(512, 415, 279, 46);
+		id = new JTextField(); // ì•„ì´ ë”” í…ìŠ¤íŠ¸í•„ë“œ
+		id.setFont(new Font("ë©”ì´í”ŒìŠ¤í† ë¦¬", Font.PLAIN, 33));
+		id.setBounds(528, 549, 279, 46);
 		id.setOpaque(false);
 		id.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		frame.getContentPane().add(id);
 		id.setColumns(10);
 
-		JButton login = new JButton(""); // ·Î±×ÀÎ ¹öÆ°
+		JButton login = new JButton(""); // ë¡œê·¸ì¸ ë²„íŠ¼
 		login.setIcon(new ImageIcon("..\\image\\btn_image\\login_bt.png"));
 		login.setFocusPainted(false);
 		login.setBorderPainted(false);
@@ -68,30 +68,30 @@ public class  Main_login extends JFrame implements ActionListener{
 					Rancking rk = new Rancking();
 					rk.setVisible(true);
 				} else {
-					result.setText("¾ÆÀÌµğ ¶Ç´Â ºñ¹Ğ ¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
+					result.setText("ì•„ì´ë”” ë˜ëŠ” ë¹„ë°€ ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 					result.setForeground(Color.red);
 				}
 			}
 		});
 		
-		login.setBounds(836, 411, 200, 128);
+		login.setBounds(845, 545, 200, 128);
 		frame.getContentPane().add(login);
 
-		pwd = new JPasswordField(); // ºñ¹Ğ¹øÈ£
+		pwd = new JPasswordField(); // ë¹„ë°€ë²ˆí˜¸
 		pwd.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		pwd.setFont(new Font("Lucida Sans", Font.BOLD, 33));
-		pwd.setBounds(512, 488, 279, 46);
+		pwd.setBounds(528, 624, 279, 46);
 		pwd.setOpaque(false);
 		frame.getContentPane().add(pwd);
 
 		lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("..\\image\\back_image\\ID.png"));
-		lblNewLabel.setBounds(460, 411, 354, 54);
+		lblNewLabel.setBounds(467, 545, 354, 54);
 		frame.getContentPane().add(lblNewLabel);
 		
 		lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon("..\\image\\back_image\\P.W.png"));
-		lblNewLabel_1.setBounds(460, 485, 354, 54);
+		lblNewLabel_1.setBounds(467, 619, 354, 54);
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		button = new JButton("");
@@ -99,7 +99,7 @@ public class  Main_login extends JFrame implements ActionListener{
 		button.setBorderPainted(false);
 		button.setContentAreaFilled(false);
 		button.setIcon(new ImageIcon("..\\image\\btn_image\\signup_bt.png"));
-		button.setBounds(460, 562, 180, 70);
+		button.setBounds(467, 696, 180, 70);
 		frame.getContentPane().add(button);
 		button.addActionListener(new ActionListener() {
 			@Override
@@ -110,7 +110,7 @@ public class  Main_login extends JFrame implements ActionListener{
 		});
 		
 
-		button_1 = new JButton(""); // °Ô½ºÆ®¸ğµå
+		button_1 = new JButton(""); // ê²ŒìŠ¤íŠ¸ëª¨ë“œ
 		button_1.setFocusPainted(false);
 		button_1.setBorderPainted(false);
 		button_1.setContentAreaFilled(false);
@@ -123,7 +123,7 @@ public class  Main_login extends JFrame implements ActionListener{
 		});
 		
 		button_1.setIcon(new ImageIcon("..\\image\\btn_image\\rule_bt.png"));
-		button_1.setBounds(657, 562, 180, 70);
+		button_1.setBounds(659, 696, 180, 70);
 		
 		frame.getContentPane().add(button_1);
 		
@@ -141,20 +141,20 @@ public class  Main_login extends JFrame implements ActionListener{
 		});
 		htp.setIcon(new ImageIcon("..\\image\\btn_image\\guest_bt.png"));
 		htp.setBorderPainted(false);
-		htp.setBounds(856, 562, 180, 70);
+		htp.setBounds(854, 696, 180, 70);
 		frame.getContentPane().add(htp);
 
-		result = new JLabel("\t\t\t\t\uB85C\uADF8\uC778\uC744 \uD574\uC8FC\uC138\uC694!"); // ·Î±×ÀÎ°á°ú
+		result = new JLabel("\t\t\t\t\uB85C\uADF8\uC778\uC744 \uD574\uC8FC\uC138\uC694!"); // ë¡œê·¸ì¸ê²°ê³¼
 		result.setForeground(Color.WHITE);
-		result.setFont(new Font("¸ŞÀÌÇÃ½ºÅä¸®", Font.BOLD, 13));
-		result.setBounds(460, 379, 361, 34);
+		result.setFont(new Font("ë©”ì´í”ŒìŠ¤í† ë¦¬", Font.BOLD, 13));
+		result.setBounds(500, 517, 375, 34);
 		frame.getContentPane().add(result);
 		result.setOpaque(false);
 
 		
-		lblNewLabel_2 = new JLabel(""); // ¹è°æ
-		lblNewLabel_2.setIcon(new ImageIcon("..//image//back_image//start_background.jpg"));
-		lblNewLabel_2.setBounds(0, 0, 1500, 850);
+		lblNewLabel_2 = new JLabel(""); // ë°°ê²½
+		lblNewLabel_2.setIcon(new ImageIcon("..\\image\\back_image\\start_background.jpg"));
+		lblNewLabel_2.setBounds(0, 0, 1494, 821);
 		frame.getContentPane().add(lblNewLabel_2);
 		
 		
